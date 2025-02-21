@@ -1,0 +1,159 @@
+:root {
+  --animate-delay: 0.2s;
+  --animate-duration: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.active {
+  border-bottom: 3px solid white;
+  padding-bottom: 15px;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+nav .menuitems {
+  display: none;
+}
+nav .des_menuitems {
+  padding: 20px 50px;
+  background: #a0a0a03f; /* Semi-transparent background */
+  backdrop-filter: blur(30px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+nav .des_menuitems .closebutton {
+  display: none;
+}
+
+nav .des_menuitems ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+nav .des_menuitems ul li {
+  list-style-type: none;
+}
+nav .des_menuitems ul li a:hover {
+  border-bottom: 3px solid white;
+  padding-bottom: 15px;
+}
+nav .des_menuitems ul li a {
+  text-decoration: none;
+  gap: 10px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+nav .des_menuitems ul li a span {
+  color: white;
+  margin-right: 4px;
+  font-family: "Bellefair", serif;
+  font-weight: bolder;
+}
+
+/* MOBILE PHONES */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  nav .des_menuitems {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  nav .hamburger {
+    cursor: pointer;
+    display: block;
+  }
+
+  nav .menuitems {
+    display: none;
+    position: absolute;
+    right: -10%;
+    height: 100vh;
+    top: -23%;
+    padding: 10px 27px;
+    width: 70%;
+    background: #0b0d1718; /* Semi-transparent background */
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    padding: 20px;
+    z-index: 1;
+  }
+
+  nav .menuitems ul li a:hover {
+    border-bottom: none;
+    padding-bottom: 0;
+    color: white;
+  }
+
+  .animate__fadeInRight {
+    display: block !important;
+  }
+
+  nav .menuitems .closebutton {
+    text-align: end;
+    display: block;
+    margin-right: 30px;
+    margin-top: 20px;
+
+    cursor: pointer;
+  }
+
+  nav .menuitems ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30dvh;
+    gap: 20px;
+  }
+  nav .menuitems ul li {
+    list-style-type: none;
+  }
+
+  nav .menuitems ul li a {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    color: #d0d6f9;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  nav .menuitems ul li a span {
+    color: white;
+  }
+  .active {
+    border-right: 3px solid white;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+}

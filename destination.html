@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/destination.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="animate__animated animate__fadeIn animate__delay-2s">
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="/"> <img src="./assets/shared//logo.svg" alt="" /></a>
+          </div>
+          <div id="open-btn" class="hamburger">
+            <img src="./assets/shared//icon-hamburger.svg" alt="" />
+          </div>
+
+          <div class="des_menuitems animate__animated">
+            <ul>
+              <li class="">
+                <a href="/"><span>00</span>home</a>
+              </li>
+              <li>
+                <a href="/destination.html"> <span>01</span>Destination</a>
+              </li>
+              <li>
+                <a href="/crew.html"><span>02</span>Crew</a>
+              </li>
+              <li>
+                <a href="/technology.html"><span>03</span>technology</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menuitems animate__animated">
+            <div id="close-btn" class="closebutton">
+              <img src="./assets/shared/icon-close.svg" alt="" />
+            </div>
+            <ul>
+              <li class="">
+                <a href="/"><span>00</span>home</a>
+              </li>
+              <li>
+                <a href="/destination-moon.html"> <span>01</span>Destination</a>
+              </li>
+              <li>
+                <a href="/crew-engineer.html"><span>02</span>Crew</a>
+              </li>
+              <li>
+                <a href="/technology-spaceport.html"
+                  ><span>03</span>technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <section class="container">
+        <h1>01 Pick your destination</h1>
+        <main class="destination_container">
+          <div class="col1">
+            <img id="destination_img" alt="" />
+          </div>
+          <div class="col2">
+            <div class="destiantion_sub_navigation"></div>
+
+            <h1 id="destination_title"></h1>
+
+            <div
+              id="destination_description"
+              class="destination_description"
+            ></div>
+            <hr />
+
+            <div class="destination_estimate">
+              <div class="avg_distance">
+                <h3>avg. distance</h3>
+                <p id="avg_travel"><span>km</span></p>
+              </div>
+              <div class="avg-travel">
+                <h3>est. travel time</h3>
+                <p id="avg_time"><span>days</span></p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </header>
+
+    <script src="./script/script.js"></script>
+    <script src="./script/destination.js"></script>
+  </body>
+</html>

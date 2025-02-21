@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+section h1 {
+  color: white;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section h1 span {
+  color: #d0d6f9;
+}
+
+section main {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  margin-top: 10%;
+}
+
+section main .col1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+section main .col1 img {
+  width: 80%;
+  margin-inline: auto;
+  margin: 10px 0;
+}
+section main .col2 .destiantion_sub_navigation {
+  display: flex;
+  gap: 30px;
+}
+section main .col2 .destiantion_sub_navigation button {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+section main .col2 .destiantion_sub_navigation button:hover {
+  border-bottom: 3px solid white;
+  transition: all ease-in-out 2s;
+}
+section main .col2 .destiantion_sub_navigation .destination_btn_active {
+  border-bottom: 3px solid white;
+}
+
+section main .col2 h1 {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-weight: 200;
+  font-size: 5rem;
+  margin-top: 14px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+section main .col2 .destination_description {
+  font-family: "Barlow", serif;
+  color: #d0d6f9;
+  font-weight: 200;
+  /* border-bottom: 0.2px solid #d0d6f9; */
+  padding-bottom: 30px;
+  max-width: 790px;
+  line-height: 28px;
+}
+
+hr {
+  height: 0px;
+}
+
+.destination_estimate {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 30%;
+}
+
+.destination_estimate .avg_distance h3 {
+  color: #d0d6f9;
+  font-family: "Barlow", serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.destination_estimate .avg_distance p {
+  color: white;
+  font-family: "Barlow", serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1em;
+
+  text-transform: uppercase;
+}
+.destination_estimate .avg-travel h3 {
+  color: #d0d6f9;
+  font-family: "Barlow", serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.destination_estimate .avg-travel p {
+  color: white;
+  font-family: "Barlow", serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1em;
+
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+    height: auto;
+  }
+
+  section h1 {
+    color: white;
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  section main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section main .col1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section main .col1 img {
+    width: 50%;
+    margin-inline: auto;
+    margin: 10px 0;
+  }
+
+  section main .col2 .destiantion_sub_navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  section main .col2 .destiantion_sub_navigation button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  section main .col2 .destiantion_sub_navigation .destination_btn_active {
+    border-bottom: 3px solid white;
+  }
+  section main .col2 h1 {
+    color: white;
+    font-family: "Bellefair", serif;
+    font-weight: 200;
+    font-size: 5rem;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  section main .col2 .destination_description {
+    font-family: "Barlow", serif;
+    color: #d0d6f9;
+    text-align: center;
+    font-weight: 200;
+    line-height: 28px;
+    max-width: 450px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+
+  .destination_estimate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .destination_estimate .avg_distance h3 {
+    color: #d0d6f9;
+    font-family: "Barlow", serif;
+    font-weight: 200;
+
+    text-transform: uppercase;
+  }
+  .destination_estimate .avg_distance p {
+    color: white;
+    font-family: "Barlow", serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 7px;
+
+    text-transform: uppercase;
+  }
+  .destination_estimate .avg-travel h3 {
+    color: #d0d6f9;
+    font-family: "Barlow", serif;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 20px;
+
+    text-transform: uppercase;
+  }
+  .destination_estimate .avg-travel p {
+    color: white;
+    font-family: "Barlow", serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 7px;
+
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
