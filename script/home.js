@@ -5,6 +5,6 @@ home_explore.addEventListener("click", (e) => {
   document.body.classList.add("fade-out");
 
   setTimeout(() => {
-    window.location.href = "destination-moon.html"; // Navigate after fade-out
+    window.location.href = "destination.html"; // Navigate after fade-out
   }, 100);
 });
